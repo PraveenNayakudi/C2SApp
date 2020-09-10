@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 align-middle">
+            <h3>C2S App</h3>
+            <p>Please Login or SignUp to get access</p>
+        </div>
+        <div class=" col-md-6">
+            <div class="help-block error">
+                    {{authError}}
+            </div>
+            <form (ngSubmit)="isLoginMode? Login(userData): SignUp(userData)" #userData="ngForm">
+                <div class="form-group">
+                    <label for="user_name">Username</label>
+                    <input type="text" id="user_name" class="form-control" name="user_name" ngModel >
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" name="password" ngModel >
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" type="submit">{{isLoginMode?'Login':'Sign Up'}}</button> |
+                    <button class="btn btn-primary" type="button" (click)="isLoginMode = !isLoginMode">{{isLoginMode?'Switch to Sign Up':'Switch to Login'}}</button>
+                </div>
+            </form>
+            
+        </div>  
+    </div>
+    
+</div>
+

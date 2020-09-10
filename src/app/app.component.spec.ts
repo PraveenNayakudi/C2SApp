@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'c2sapp'`, () => {
+  it(`should have as title 'ng-auth'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('c2sapp');
+    expect(app.title).toEqual('ng-auth');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('c2sapp app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ng-auth app is running!');
   });
 });

@@ -1,0 +1,29 @@
+#site-search{
+    position: relative;
+}
+#site-search .glyphicon-search{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+#site-search input{
+    border-radius: 15px;
+    padding-left: 25px;
+}
+#site-search input::placeholder{
+color: rgb(167, 159, 159);
+padding-left: 40px;
+}
+.glyphicon-user, .glyphicon-user:hover{
+    display: inline-block;
+    background:#fff;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+nav{
+    background-color: #2fc8dd;
+    border-color: #2fc8dd;
+}
+.navbar{
+    margin-bottom: 0px;
+}
